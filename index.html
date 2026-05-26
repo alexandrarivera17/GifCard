@@ -1,147 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GifCard</title>
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            color: #ecf0f1;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+  <head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Flashcards de Mitos e Verdades</title>
 
-        .card {
-            width: min(420px, calc(100vw - 32px));
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 24px;
-            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
-            overflow: hidden;
-            backdrop-filter: blur(16px);
-        }
-
-        .card img {
-            width: 100%;
-            display: block;
-            object-fit: cover;
-            aspect-ratio: 16 / 9;
-        }
-
-        .card-content {
-            padding: 24px;
-        }
-
-        .card-title {
-            margin: 0 0 8px;
-            font-size: 1.75rem;
-        }
-
-        .card-subtitle {
-            margin: 0 0 16px;
-            color: #bdc3c7;
-            font-size: 0.95rem;
-        }
-
-        .card-description {
-            margin: 0 0 20px;
-            line-height: 1.7;
-            color: #dfe6e9;
-        }
-
-        .actions {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .button {
-            border: none;
-            border-radius: 999px;
-            padding: 12px 18px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.18s ease, background 0.18s ease;
-        }
-
-        .button:hover {
-            transform: translateY(-2px);
-        }
-
-        .button-primary {
-            background: #e84393;
-            color: white;
-        }
-
-        .button-secondary {
-            background: rgba(255, 255, 255, 0.12);
-            color: white;
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 12px;
-            border-radius: 999px;
-            background: rgba(255, 255, 255, 0.12);
-            font-size: 0.9rem;
-        }
-
-        .badge span {
-            width: 10px;
-            height: 10px;
-            border-radius: 999px;
-            display: inline-block;
-            background: #e84393;
-        }
-    </style>
-</head>
-<body>
-    <article class="card">
-        <img id="gifImage" src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849" alt="GIF animado" />
-        <div class="card-content">
-            <h1 class="card-title">GifCard</h1>
-            <p class="card-subtitle">Um cartão de GIF interativo com HTML, CSS e JavaScript.</p>
-            <p class="card-description">Clique no botão abaixo para trocar o GIF e veja o cartão ganhar vida. Esse exemplo funciona em qualquer navegador moderno.</p>
-            <div class="actions">
-                <button class="button button-primary" id="loadGif">Trocar GIF</button>
-                <button class="button button-secondary" id="toggleFavorite">Favoritar</button>
-            </div>
-            <div class="badge" id="statusBadge"><span></span> Favorito: não</div>
-        </div>
-    </article>
-
-    <script>
-        const gifs = [
-           https:https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849&quot
-           https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849&quot
-           https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849&quot
-           https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849&quot
-        ];
-
-        const gifImage = document.getElementById("gifImage");
-        const loadGif = document.getElementById("loadGif");
-        const toggleFavorite = document.getElementById("toggleFavorite");
-        const statusBadge = document.getElementById("statusBadge");
-
-        let favorite = false;
-
-        loadGif.addEventListener("click", () => {
-            const nextIndex = Math.floor(Math.random() * gifs.length);
-            gifImage.src = gifs[nextIndex];
-        });
-
-        toggleFavorite.addEventListener("click", () => {
-            favorite = !favorite;
-            statusBadge.innerHTML = `<span></span> Favorito: ${favorite ? "sim" : "não"}`;
-            toggleFavorite.textContent = favorite ? "Remover favorito" : "Favoritar";
-        });
-    </script>
-</body>
-</html>
+  </head> 
+  <body> 
+    <header> 
+    </header> 
+   <header> 
+  <h1>Confere Aí</h1> 
+  <nav> 
+    <a href="#">Início</a> 
+  </nav> 
+   
+  <h2>Descubra a verdade passando o mouse</h2> 
+</header> 
+<main>
+ <article class=" cartao" >
+      <div class=" cartao-interno"> 
+        <div class="cartao-mentira"> 
+          <img class="cartao-imagem" src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849" alt="Pinguim" class="cartao-imagem">  
+          <p>Projeto feito por [Seu Nome]</p> 
+</footer>    
+ <div class="cartao-verso"> 
+          <img class="cartao-imagem" src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849" alt="Pinguim" class="cartao-imagem"> 
+          <p>Pinguins não voam, mas são excelentes nadadores.</p> 
+        </div> 
+    </div> 
+    </article> 
+ <footer>
+    <main> 
+    </main> 
+ 
+    <footer> 
+    </footer> 
+  </body> 
+ <main> 
+ 
+  <section>     
+  </section> 
+</main> </html> 
+     
