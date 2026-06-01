@@ -1,15 +1,26 @@
 *{
 margin: 0;
 padding: 0;
-
+}
 .cabecalho{
-margin:0;
-padding: 0;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+  padding: 15px 25px;
     }
+  body { 
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh; 
+} 
+main{
+  flex: 1;
+} 
+}
     .cartao{
         width: 260 px;
         height: 200 px;
     }
     .cartao-imagem{
         width:100%;
-    }
+ }
